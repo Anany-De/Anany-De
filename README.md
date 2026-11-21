@@ -14,8 +14,13 @@
   <a href="https://tryhackme.com/p/ananysha941">
     <img src="https://img.shields.io/badge/TryHackMe-Top%201%25%20Global-00d4ff?style=for-the-badge&logo=tryhackme&logoColor=00d4ff&labelColor=0f1419" alt="TryHackMe Top 1%" />
   </a>
-  <img src="https://img.shields.io/badge/LLM%20Security-86%25%20Certified-00ff88?style=for-the-badge&logo=openai&logoColor=00ff88&labelColor=0f1419" alt="LLM Security Certified" />
-  <img src="https://img.shields.io/badge/GitHub%20Repos-68%2B%20SecOps-00d4ff?style=for-the-badge&logo=github&logoColor=00d4ff&labelColor=0f1419" alt="68+ Repos" />
+  <a href="https://courses.redteamleaders.com/exam-completion/035811ecaef1753f">
+    <img src="https://img.shields.io/badge/CLLMSE-LLM%20Security%20Expert-00ff88?style=for-the-badge&logo=openai&logoColor=00ff88&labelColor=0f1419" alt="CLLMSE Certified" />
+  </a>
+  <a href="https://courses.redteamleaders.com/exam-completion/ec611729e15d8332">
+    <img src="https://img.shields.io/badge/CLLMSP-LLM%20Security%20Professional-00d4ff?style=for-the-badge&logo=shield&logoColor=00d4ff&labelColor=0f1419" alt="CLLMSP Certified" />
+  </a>
+  <img src="https://img.shields.io/badge/GitHub%20Repos-68%2B%20SecOps-00ff88?style=for-the-badge&logo=github&logoColor=00ff88&labelColor=0f1419" alt="68+ Repos" />
 </p>
 
 ---
@@ -57,9 +62,18 @@ Bridging offensive technical insight with enterprise risk management, security t
 | Metric | Value | Details |
 | :--- | :--- | :--- |
 | **Repo Intelligence** | `68+ Repos` | Open-Source Tooling, CLI Scanners & CVE Exploits |
-| **AI Defense Metric** | `86% Cert` | LLM Jailbreak & Prompt Injection Defense |
+| **AI Defense Metric** | `86% Cert` | LLM Jailbreak & Prompt Injection Defense (CLLMSE / CLLMSP) |
 | **Operational Clearance** | `Level 1 Lead` | Certified Red Team Emulation Practitioner |
 | **Offensive Benchmark** | `Top 1%` | TryHackMe & PortSwigger Global Ranking (150+ Labs) |
+
+---
+
+## 📜 Certifications & Verified Credentials
+
+| Credential | Issuer | Verification Link | Status |
+| :--- | :--- | :--- | :--- |
+| **Certified LLM Security Expert (CLLMSE)** | Red Team Leaders | [Verify Credential ↗](https://courses.redteamleaders.com/exam-completion/035811ecaef1753f) | `ACTIVE // VERIFIED` |
+| **Certified LLM Security Professional (CLLMSP)** | Red Team Leaders | [Verify Credential ↗](https://courses.redteamleaders.com/exam-completion/ec611729e15d8332) | `ACTIVE // VERIFIED` |
 
 ---
 
