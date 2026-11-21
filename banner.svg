@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
+  <defs>
+    <!-- Dark Abyssal Canvas Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f14" />
+      <stop offset="50%" stop-color="#0d151c" />
+      <stop offset="100%" stop-color="#0a0f14" />
+    </linearGradient>
+
+    <!-- Radial Glow Highlights -->
+    <radialGradient id="glow-cyan" cx="15%" cy="30%" r="45%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-emerald" cx="85%" cy="75%" r="45%">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Tech Grid Pattern -->
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-opacity="0.05" />
+      <circle cx="24" cy="24" r="0.75" fill="#00ff88" fill-opacity="0.15" />
+    </pattern>
+
+    <!-- Glowing Filters -->
+    <filter id="neon-glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="neon-glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 0.35; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(280px); }
+    }
+    .pulse-dot {
+      animation: pulse 2s infinite ease-in-out;
+    }
+    .mono-font {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    }
+    .display-font {
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1000" height="280" fill="url(#bg-grad)" rx="6" />
+  <rect width="1000" height="280" fill="url(#grid)" rx="6" />
+  <rect width="1000" height="280" fill="url(#glow-cyan)" rx="6" />
+  <rect width="1000" height="280" fill="url(#glow-emerald)" rx="6" />
+
+  <!-- Outer Glass Frame & Tactical Reticle Border -->
+  <rect x="8" y="8" width="984" height="264" rx="4" fill="none" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.2" />
+  <rect x="12" y="12" width="976" height="256" rx="2" fill="none" stroke="#00ff88" stroke-width="0.5" stroke-opacity="0.15" stroke-dasharray="10 4" />
+
+  <!-- Tactical Corner Crosshairs & Brackets -->
+  <!-- Top-Left -->
+  <path d="M 8 26 L 8 8 L 26 8" fill="none" stroke="#00ff88" stroke-width="2" />
+  <text x="18" y="24" fill="#00ff88" font-size="10" class="mono-font" font-weight="700">+</text>
+  <!-- Top-Right -->
+  <path d="M 974 8 L 992 8 L 992 26" fill="none" stroke="#00f0ff" stroke-width="2" />
+  <text x="976" y="24" fill="#00f0ff" font-size="10" class="mono-font" font-weight="700">+</text>
+  <!-- Bottom-Left -->
+  <path d="M 8 254 L 8 272 L 26 272" fill="none" stroke="#00f0ff" stroke-width="2" />
+  <text x="18" y="266" fill="#00f0ff" font-size="10" class="mono-font" font-weight="700">+</text>
+  <!-- Bottom-Right -->
+  <path d="M 974 272 L 992 272 L 992 254" fill="none" stroke="#00ff88" stroke-width="2" />
+  <text x="976" y="266" fill="#00ff88" font-size="10" class="mono-font" font-weight="700">+</text>
+
+  <!-- TOP STATUS RAIL -->
+  <g transform="translate(24, 30)">
+    <!-- Radar Dot -->
+    <circle cx="6" cy="4" r="4.5" fill="#00ff88" class="pulse-dot" filter="url(#neon-glow-emerald)" />
+    <circle cx="6" cy="4" r="2" fill="#0a0f14" />
+    <text x="18" y="8" fill="#00ff88" font-size="11" font-weight="700" letter-spacing="1.5" class="mono-font">NODE-OP-7049 // ACTIVE</text>
+    
+    <!-- Classification -->
+    <text x="500" y="8" fill="#00f0ff" font-size="11" font-weight="600" letter-spacing="2" text-anchor="middle" class="mono-font" opacity="0.9">SECURITY OPERATIONS // ADVERSARIAL EMULATION &amp; GRC</text>
+
+    <!-- Location Telemetry -->
+    <text x="952" y="8" fill="#7d8b99" font-size="10.5" font-weight="500" letter-spacing="1" text-anchor="end" class="mono-font">SYS.LOC: AGRA [27.1767° N, 78.0081° E]</text>
+  </g>
+
+  <!-- Hairline Header Divider -->
+  <line x1="24" y1="46" x2="976" y2="46" stroke="#00f0ff" stroke-opacity="0.18" stroke-width="1" />
+  <rect x="470" y="44" width="60" height="4" fill="#00f0ff" fill-opacity="0.4" rx="2" />
+
+  <!-- HERO CENTER SECTION -->
+  <g transform="translate(36, 74)">
+    <!-- Terminal Prompt Glyphs -->
+    <text x="0" y="52" fill="#00ff88" font-size="44" font-weight="800" class="mono-font" filter="url(#neon-glow-emerald)">></text>
+    
+    <!-- Primary Name Header -->
+    <text x="38" y="52" fill="#f1ffef" font-size="44" font-weight="800" letter-spacing="2.5" class="display-font">ANANY SHARMA</text>
+    
+    <!-- Clearance & Role Badge -->
+    <g transform="translate(450, 20)">
+      <rect x="0" y="0" width="220" height="24" rx="12" fill="#00ff88" fill-opacity="0.12" stroke="#00ff88" stroke-width="1" stroke-opacity="0.4" />
+      <circle cx="12" cy="12" r="3.5" fill="#00ff88" class="pulse-dot" />
+      <text x="24" y="16" fill="#00ff88" font-size="10.5" font-weight="700" letter-spacing="1" class="mono-font">CLEARANCE: LEVEL 1 LEAD</text>
+    </g>
+
+    <g transform="translate(680, 20)">
+      <rect x="0" y="0" width="210" height="24" rx="12" fill="#00f0ff" fill-opacity="0.12" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.4" />
+      <circle cx="12" cy="12" r="3.5" fill="#00f0ff" class="pulse-dot" />
+      <text x="24" y="16" fill="#00f0ff" font-size="10.5" font-weight="700" letter-spacing="1" class="mono-font">TRYHACKME: TOP 1% GLOBAL</text>
+    </g>
+
+    <!-- Subtitle / Tactical Focus -->
+    <text x="38" y="82" fill="#00f0ff" font-size="14.5" font-weight="600" letter-spacing="2" class="mono-font" filter="url(#neon-glow-cyan)">OFFENSIVE SECURITY SPECIALIST  •  AI/LLM SECURITY  •  GRC ANALYST</text>
+
+    <!-- Tactical Brief -->
+    <text x="38" y="108" fill="#94a3b8" font-size="12" font-weight="400" letter-spacing="1" class="mono-font">
+      WIRELESS PENTESTING  //  NETWORK PACKET ANALYSIS  //  AUTOMATED SECOPS  //  NIST CSF &amp; ISO 27001
+    </text>
+  </g>
+
+  <!-- BOTTOM TELEMETRY DOCKED CARDS -->
+  <g transform="translate(24, 204)">
+    <!-- Card 1: Red Team Matrix -->
+    <g transform="translate(0, 0)">
+      <rect width="306" height="54" rx="4" fill="#121c24" fill-opacity="0.75" stroke="#00ff88" stroke-opacity="0.3" stroke-width="1" />
+      <path d="M 0 0 L 8 0 L 0 8 Z" fill="#00ff88" />
+      <text x="14" y="20" fill="#00ff88" font-size="10" font-weight="700" letter-spacing="1" class="mono-font">TELEMETRY // OFFENSIVE</text>
+      <text x="14" y="40" fill="#dee3ea" font-size="12" font-weight="600" class="mono-font">68+ Repos • Tooling &amp; Scanners</text>
+      <text x="294" y="32" fill="#00ff88" font-size="14" font-weight="700" text-anchor="end" class="mono-font">01</text>
+    </g>
+
+    <!-- Card 2: AI Defense Matrix -->
+    <g transform="translate(324, 0)">
+      <rect width="306" height="54" rx="4" fill="#121c24" fill-opacity="0.75" stroke="#00f0ff" stroke-opacity="0.3" stroke-width="1" />
+      <path d="M 0 0 L 8 0 L 0 8 Z" fill="#00f0ff" />
+      <text x="14" y="20" fill="#00f0ff" font-size="10" font-weight="700" letter-spacing="1" class="mono-font">TELEMETRY // AI RESILIENCE</text>
+      <text x="14" y="40" fill="#dee3ea" font-size="12" font-weight="600" class="mono-font">86% LLM Sec • Prompt Defense</text>
+      <text x="294" y="32" fill="#00f0ff" font-size="14" font-weight="700" text-anchor="end" class="mono-font">02</text>
+    </g>
+
+    <!-- Card 3: GRC & Benchmark -->
+    <g transform="translate(648, 0)">
+      <rect width="304" height="54" rx="4" fill="#121c24" fill-opacity="0.75" stroke="#00ff88" stroke-opacity="0.3" stroke-width="1" />
+      <path d="M 0 0 L 8 0 L 0 8 Z" fill="#00ff88" />
+      <text x="14" y="20" fill="#00ff88" font-size="10" font-weight="700" letter-spacing="1" class="mono-font">TELEMETRY // BENCHMARK</text>
+      <text x="14" y="40" fill="#dee3ea" font-size="12" font-weight="600" class="mono-font">Top 1% THM • 150+ Lab Exploits</text>
+      <text x="292" y="32" fill="#00ff88" font-size="14" font-weight="700" text-anchor="end" class="mono-font">03</text>
+    </g>
+  </g>
+</svg>
