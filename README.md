@@ -20,7 +20,9 @@
   <a href="https://courses.redteamleaders.com/exam-completion/ec611729e15d8332">
     <img src="https://img.shields.io/badge/CLLMSP-LLM%20Security%20Professional-00d4ff?style=for-the-badge&logo=shield&logoColor=00d4ff&labelColor=0f1419" alt="CLLMSP Certified" />
   </a>
-  <img src="https://img.shields.io/badge/GitHub%20Repos-68%2B%20SecOps-00ff88?style=for-the-badge&logo=github&logoColor=00ff88&labelColor=0f1419" alt="68+ Repos" />
+  <a href="https://github.com/Anany-De?tab=repositories">
+    <img src="https://img.shields.io/badge/GitHub%20Repos-68%2B%20SecOps-00ff88?style=for-the-badge&logo=github&logoColor=00ff88&labelColor=0f1419" alt="68+ Repos" />
+  </a>
 </p>
 
 ---
@@ -61,7 +63,7 @@ Bridging offensive technical insight with enterprise risk management, security t
 
 | Metric | Value | Details |
 | :--- | :--- | :--- |
-| **Repo Intelligence** | `68+ Repos` | Open-Source Tooling, CLI Scanners & CVE Exploits |
+| **Repo Intelligence** | [`68+ Repos ↗`](https://github.com/Anany-De?tab=repositories) | [Open-Source Tooling, CLI Scanners & CVE Exploits](https://github.com/Anany-De?tab=repositories) |
 | **AI Defense Metric** | `86% Cert` | LLM Jailbreak & Prompt Injection Defense (CLLMSE / CLLMSP) |
 | **Operational Clearance** | `Level 1 Lead` | Certified Red Team Emulation Practitioner |
 | **Offensive Benchmark** | `Top 1%` | TryHackMe & PortSwigger Global Ranking (150+ Labs) |
@@ -108,6 +110,7 @@ Bridging offensive technical insight with enterprise risk management, security t
 ## 📡 Recon & Intelligence Feeds
 
 - **GitHub Matrix:** [github.com/Anany-De](https://github.com/Anany-De)
+- **Security Repositories:** [github.com/Anany-De?tab=repositories](https://github.com/Anany-De?tab=repositories)
 - **TryHackMe Profile:** [tryhackme.com/p/ananysha941](https://tryhackme.com/p/ananysha941)
 - **LinkedIn Network:** [linkedin.com/in/anany-sharma2001](https://linkedin.com/in/anany-sharma2001)
 
