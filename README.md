@@ -110,7 +110,6 @@ Bridging offensive technical insight with enterprise risk management, security t
 ## 📡 Recon & Intelligence Feeds
 
 - **GitHub Matrix:** [github.com/Anany-De](https://github.com/Anany-De)
-- **Security Repositories:** [github.com/Anany-De?tab=repositories](https://github.com/Anany-De?tab=repositories)
 - **TryHackMe Profile:** [tryhackme.com/p/ananysha941](https://tryhackme.com/p/ananysha941)
 - **LinkedIn Network:** [linkedin.com/in/anany-sharma2001](https://linkedin.com/in/anany-sharma2001)
 
